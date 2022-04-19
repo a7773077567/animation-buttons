@@ -669,6 +669,47 @@ ol {
   bottom: 0;
 }
 
+.button15 {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3) 3px 3px 10px;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button15::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.button15 {
+  position: relative;
+  background: #663dff;
+  z-index: 1;
+}
+.button15:hover {
+  color: #fff;
+}
+.button15:hover::after {
+  left: 0;
+  width: 100%;
+}
+.button15::after {
+  background: #b621fe;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3) 3px 3px 10px;
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+
 body {
   display: flex;
   justify-content: space-between;
